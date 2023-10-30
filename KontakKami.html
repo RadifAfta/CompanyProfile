@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/styleKontak.css">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Kontak Kami</title>
+</head>
+
+<body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <div class="fContainer">
+        <nav class="wrapper">
+            <div class="brand">
+                <a href="index.html"><img class="img2" src="./assets/images/logo-tmmin-new.png"></a>
+            </div>
+            <div class="navbar" id="navvbar">
+                <a class="hov-" href="corporate.html">Corporate</a>
+                <div class="dropdown">
+                    <button class="dropbtn" href="Manufacturing.html">Manufacturing
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Product</a>
+                        <a href="Manufacturing.html">Manufacturing</a>
+                        <a href="#">How We</a>
+                    </div>
+                </div>
+                <a class="active" href="#news">People</a>
+                <a class="hov-" href="#news">Industrial</a>
+                <a class="hov-" href="#news">News Update</a>
+            </div>
+            <div class="dw">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn" id="coba">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <div id='mdw' class="cdw">
+                    <a class='aba' href="#home">Corporate</a>
+                    <a class="aba" href="#about">Manufacturing</a>
+                    <a class="aba" href="#contact">People</a>
+                    <a class="aba" href="#contact">Industrial</a>
+                    <a class="aba" href="#contact">News Update</a>
+                </div>
+            </div>
+            <script>
+                document.getElementById("coba").onclick = function () { myFunction() };
+                function myFunction() {
+                    document.getElementById("mdw").classList.toggle("show");
+                }
+            </script>
+
+        </nav>
+    </div>
+
+    <div class="fContainer-header">
+        <table class="fade-in-text" data-aos="zoom-in">
+            <tbody>
+                <tr class="awal">
+                    <td></td>
+                </tr>
+                <tr class="akhir">
+                    <td>Kontak Kami</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+    </div>
+    <h3 class="h3coy">Contact Us</h3>
+    <div class="container">
+        <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+
+    </div>
+
+    <footer class="footer">
+        <img src="./assets/images/logo-tmmin-new.png" alt="">
+        <ul class="table1">
+            <li>Toyota Global |</li>
+            <li>Toyota Astra Motor</li>
+        </ul>
+
+        <p class="p11">_______________________________________________</p><br>
+        <div class="p22">
+            <p>his website is operated by PT Toyota Motor Manufacturing Indonesia (here in after referred to
+                as "TMMIN").
+            </p>
+        </div>
+        <div class="kacau">
+            <p>Use of this website is based on acceptance of the Terms and Conditions without limitation
+                or reservation.
+            </p>
+        </div>
+        <p class="p33">_______________________________________________________________________________________</p>
+        <br>
+        <ul class="table2">
+            <li class="li-ahay"><a class="a-footer">SITEMAP</a></li>
+            <li class="li-ahay"><a class="a-footer">KETENTUAN</a></li>
+            <li class="li-ahay"><a class="a-footer">FAQ</a></li>
+            <li class="li-ahay"><a href='KontakKami.html' class="a-footer">KONTAK KAMI</a></li>
+            <li class="li-ahay"><a class="a-footer">GLOSSARY</a></li>
+        </ul>
+        </table>
+        <p class="p11">________________________________________________________________</p><br>
+        <p class="p11">Social Media</p>
+        <div class="div-">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+        <p class="right">© 2022 PT Toyota Motor Manufacturing Indonesia. All Rights Reserved.</p>
+    </footer>
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">⇈</button>
+
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        AOS.init();
+    </script>
+</body>
+
+</html>
