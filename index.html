@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>broku</title>
+</head>
+
+<body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <div class="fContainer">
+        <nav class="wrapper">
+            <div class="brand">
+                <a href="index.html"><img class="img2" src="./assets/images/logo-tmmin-new.png"></a>
+            </div>
+            <div class="navbar" id="navvbar">
+                <a class="hov-" href="corporate.html">Corporate</a>
+                <div class="dropdown">
+                    <button class="dropbtn" href="Manufacturing.html">Manufacturing
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Product</a>
+                        <a href="Manufacturing.html">Manufacturing</a>
+                        <a href="#">How We</a>
+                    </div>
+                </div>
+                <a class="active" href="#news">People</a>
+                <a class="hov-" href="#news">Industrial</a>
+                <a class="hov-" href="#news">News Update</a>
+            </div>
+            <div class="dw">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn" id="coba">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <div id='mdw' class="cdw">
+                    <a class='aba' href="#home">Corporate</a>
+                    <a class="aba" href="#about">Manufacturing</a>
+                    <a class="aba" href="#contact">People</a>
+                    <a class="aba" href="#contact">Industrial</a>
+                    <a class="aba" href="#contact">News Update</a>
+                </div>
+            </div>
+            <script>
+                document.getElementById("coba").onclick = function () { myFunction() };
+                function myFunction() {
+                    document.getElementById("mdw").classList.toggle("show");
+                }
+            </script>
+
+        </nav>
+    </div>
+
+    <div class="container-header">
+        <div class="content-slide">
+            <div class="imgslide fade">
+                <img class="slider-img" src="./assets/images/slide4.jpg" alt="s">
+            </div>
+
+            <div class="imgslide fade">
+                <img class="slider-img" src="./assets/images/slide2.jpg" alt="">
+            </div>
+
+            <div class="imgslide fade">
+                <img class="slider-img" src="./assets/images/slide22.jpg" alt="">
+            </div>
+
+            <div class="imgslide fade">
+                <img class="slider-img" src="./assets/images/slide3.jpg" alt="">
+            </div>
+
+            <a class="prev" onClick="nextslide(-1)">&#10094;</a>
+            <a class="next" onClick="nextslide(1)">&#10095;</a>
+        </div>
+
+    </div>
+
+
+
+    <script>
+        var slideIndex = 1;
+        showSlide(slideIndex);
+
+        function nextslide(n) {
+            showSlide(slideIndex += n);
+        }
+
+        function dotslide(n) {
+            showSlide(slideIndex = n);
+        }
+
+        function showSlide(n) {
+            var i;
+            var slides = document.getElementsByClassName("imgslide");
+
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+            for (i = 0; i < slides.length; i++) {
+
+                slides[i].style.display = "none";
+            }
+
+
+            slides[slideIndex - 1].style.display = "block";
+
+
+
+        }
+    </script>
+
+    <div class="wrapper-main">
+        <div class="container-main1">
+            <table class="fade-in-text1" id="table-main1" data-aos="fade-right">
+                <tr>
+                    <td>
+                        <h3 class="main1-h3">Profile Perusahaan</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h1 class="main1-h1">PERUSAHAAN MANUFAKTUR GLOBAL</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="main1-p">Selama lebih dari 50 tahun, TMMIN berkembang bersama masyarakat Indonesia.
+                        </p>
+                        <p class="main1-p">berkomitmen untuk menghadirkan produk dengan kualitas terbaik dan</p>
+                        <p class="main1-p3">telah diekspor ke lebih dari 80 negara di dunia.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="corporate.html" class="button-main1">Lihat Detail ></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="container-main2">
+            <table id="table-main2" class="fade-in-text2" data-aos="fade-left">
+                <tr class="tr-h3">
+                    <td>
+                        <h3 class="main2-h3">Manufacturing</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h1 class="main2-h1">KEAHLIAN KAMI</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="main2-p">Berbekal pengalaman panjang yang didukung dengan sumber daya dan pabrik</p>
+                        <p class="main2-p">berstandar internasional, kami menghadirkan produk terbaik mulai dari
+                            kendaraan,</p>
+                        <p class="main2-p3">mesin, komponen kendaraan, dan alat produksi.</p>
+                    </td>
+                </tr>
+                <tr class="tr-h2">
+                    <td>
+                        <a href="Manufacturing.html" class="button-main2">Lihat Detail ></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="container-main3">
+            <div class="judul-main3">
+                <h2 class="main3-h2">VIDEO</h2>
+                <h3 class="main3-h3">Video Pilihan</h3>
+            </div>
+
+            <section>
+                <video id="slider" autoplay muted loop>
+                    <source src="video1.mp4" type="video/mp4">
+                </video>
+                <ul class="navigation">
+                    <li class="lilu"
+                        onClick="videoUrl('./assets/vid/Seminar Nasional_ 100 Tahun Industri Otomotif di Universitas Sebelas Maret (UNS) Solo.mp4')">
+                        <img class="imogi" src="./assets/images/fortuner.png"></li>
+                    <li onClick="videoUrl('./assets/vid/Kick Off Akselerasi Kompetensi SDM Vokasi Hadapi Tantangan Elektrifikasi.mp4')" class="lilu"><img class="imogi" src="./assets/images/lancerevo.jpg"></li>
+                    <li onClick="videoUrl('./assets/vid/Pertama di Indonesia_ Ekspor Kendaraan Elektrifikasi Toyota.mp4')" class="lilu"><img class="imogi" src="./assets/images/Toyota never die.png"></li>
+                <ul>
+
+                <script type="text/javascript">
+                    function videoUrl(hmmmmmm) {
+                        document.getElementById("slider").src = hmmmmmm;
+                    }
+                </script>
+            </section>
+        </div>
+        <footer class="footer">
+            <img src="./assets/images/logo-tmmin-new.png" alt="">
+            <ul class="table1">
+                <li>Toyota Global |</li>
+                <li>Toyota Astra Motor</li>
+            </ul>
+
+            <p class="p11">_______________________________________________</p><br>
+            <div class="p22">
+                <p>his website is operated by PT Toyota Motor Manufacturing Indonesia (here in after referred to
+                    as "TMMIN").
+                </p>
+            </div>
+            <div class="kacau">
+                <p>Use of this website is based on acceptance of the Terms and Conditions without limitation
+                    or reservation.
+                </p>
+            </div>
+            <p class="p33">_______________________________________________________________________________________</p>
+            <br>
+            <ul class="table2">
+                <li class="li-ahay"><a class="a-footer">SITEMAP</a></li>
+                <li class="li-ahay"><a class="a-footer">KETENTUAN</a></li>
+                <li class="li-ahay"><a class="a-footer">FAQ</a></li>
+                <li class="li-ahay"><a href='KontakKami.html' class="a-footer">KONTAK KAMI</a></li>
+                <li class="li-ahay"><a class="a-footer">GLOSSARY</a></li>
+            </ul>
+            </table>
+            <p class="p11">________________________________________________________________</p><br>
+            <p class="p11">Social Media</p>
+            <div class="div-">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+            <p class="right">© 2022 PT Toyota Motor Manufacturing Indonesia. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">⇈</button>
+
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
